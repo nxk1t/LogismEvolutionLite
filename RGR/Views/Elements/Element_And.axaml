@@ -1,0 +1,23 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:RGR.Views.Elements">
+  <Design.PreviewWith>
+    <controls:Element_And />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|Element_And">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+      <ControlTemplate>
+        <Canvas Width="50" Height="30" Background="Transparent">
+          <Ellipse Name="in0" Fill="Gray" Stroke="Black" StrokeThickness="1" Height="10" Width="10" Canvas.Top="2"/>
+          <Ellipse Name="in1" Fill="Gray" Stroke="Black" StrokeThickness="1" Height="10" Width="10" Canvas.Top="18"/>
+          <Path Fill="LightGray" Data="m 5,0 v 30,0 c 30,0 40,-28 0,-30" StrokeThickness="1" Stroke="Black" Canvas.Left="5"/>
+          <Ellipse Name="out0" Fill="Gray" Stroke="Black" StrokeThickness="1" Height="10" Width="10" Canvas.Top="10" Canvas.Left="37"/>
+        </Canvas>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>
+
+
